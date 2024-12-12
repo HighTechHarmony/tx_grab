@@ -1,0 +1,11 @@
+<?php
+$transmitter_password = "bwbroadcast_transmitter_pw";
+
+// Database connection parameters
+$influxDBConfig = [
+    'url' => 'http://localhost:8086',
+    'token' => 'influxdb_api_token',
+    'bucket' => 'transmitter_readings',
+    'org' => 'MyOrgName',
+    'precision' => InfluxDB2\Model\WritePrecision::NS,
+];
